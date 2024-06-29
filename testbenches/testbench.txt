@@ -1,3 +1,5 @@
+// Code your testbench here
+// or browse Examples
 module test;
 
 
@@ -17,9 +19,9 @@ votingMachine uut(
 	.reset(reset),
 	.mode(mode),
 	.button1(button1),
-	.button1(button2),
-	.button1(button3),
-	.button1(button4),
+	.button2(button2),
+	.button3(button3),
+	.button4(button4),
 	.led(led)
 );
 
@@ -92,7 +94,7 @@ initial
 	$monitor($time, "mode = %b , button1 = %b , button2 = %b , button3 = %b , button4 = %b , led = %d ", mode,button1,button2,button3,button4,led);
 
 
-
+endmodule
 
 
 

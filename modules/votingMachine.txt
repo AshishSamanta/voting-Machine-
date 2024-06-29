@@ -39,6 +39,8 @@ buttonControl bc3(
 .button(button3),
 .valid_vote(valid_vote_3)
 );
+  
+  
 buttonControl bc4(
 .clock(clock),
 .reset(reset),
@@ -59,7 +61,7 @@ voteLogger VL(
 .cand1_vote_recvd(cand1_vote_recvd),
 .cand2_vote_recvd(cand2_vote_recvd),
 .cand3_vote_recvd(cand3_vote_recvd),
-.cand4_vote_recvd(cand4_vote_recvd),
+.cand4_vote_recvd(cand4_vote_recvd)
 );
 
 
@@ -82,10 +84,4 @@ modeControl MC(
 
 
 endmodule
-
-
-
-
-
-
 
